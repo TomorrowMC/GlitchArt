@@ -45,16 +45,3 @@ It explores the concept of "glitch art" as a form of critical commentary on the 
     yarn dev
     ```
 4.  Open [http://localhost:3000](http://localhost:3000) (or the specified port) in your browser.
-
-## Project Context
-
-This project fulfills the final project requirement for INFO 5330.
-
-*(Optional: Add Team Member list here if desired)*
-* Yifei Hu
-* Sarah Morrison
-* Rebecca Deng
-* Rida Chaudhry
-* Yubang Jiang
-* Zihan Lin
-*(Based on TMD MARCH 21 DELIVERABLE.pdf)*
