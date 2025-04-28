@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TMD Glitch Signup Simulation
+
+This project is a frontend simulation of a social media signup process, developed for the INFO 5330 Technology, Media, and Democracy course at Cornell Tech (Spring 2025).
+
+It explores the concept of "glitch art" as a form of critical commentary on the implications of joining social media platforms. The application presents a modern, sleek user interface for the signup flow, which is intentionally interrupted by disruptive, retro Windows XP-style error popups containing messages that question the user's actions and highlight potential negative consequences of platform engagement.
+
+## Core Concept & Features
+
+* **Glitch Art Commentary:** Uses unexpected, retro popups with critical messages to break the seamlessness of the modern UI and prompt reflection on privacy, data, algorithmic influence, and mental well-being.
+* **Modern UI vs. Retro Glitch:** Intentionally contrasts a clean, fashionable frontend (using Tailwind CSS) with the jarring, outdated aesthetic of Windows XP error messages.
+* **Simulated Signup Flow:** Guides the user through several steps:
+    * Initial Login/Signup Screen
+    * Personal Information Entry (Name, Phone, DOB using separate fields)
+    * Interest Selection
+    * Influencer/Account Following
+    * Final "Complete Registration" step
+* **Interactive Glitching:** Popups appear upon clicking progression buttons. All popups for a given step must be closed before the user can proceed by clicking the button again. Clicking to proceed while popups are visible highlights their close buttons.
+* **Final System "Failure":** The final step simulates a system crash with a TV static/snow effect, preventing actual "completion" and reinforcing the glitch theme.
+* **Frontend Focus:** Uses mock data and focuses entirely on the frontend user experience and interaction.
+
+## Tech Stack
+
+* **Framework:** Next.js (v14+ with App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **UI Components:** React
+* **Icons:** Font Awesome
+* **State Management:** React Context API (for Glitch state)
+* **Package Manager:** Yarn
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository (or ensure you are in the project directory):**
+    ```bash
+    # If cloning fresh:
+    # git clone [https://github.com/TomorrowMC/GlitchArt.git](https://github.com/TomorrowMC/GlitchArt.git)
+    # cd GlitchArt
+    ```
+2.  **Install dependencies:**
+    ```bash
+    yarn install
+    ```
+3.  **Run the development server:**
+    ```bash
+    yarn dev
+    ```
+4.  Open [http://localhost:3000](http://localhost:3000) (or the specified port) in your browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Context
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project fulfills the final project requirement for INFO 5330.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*(Optional: Add Team Member list here if desired)*
+* Yifei Hu
+* Sarah Morrison
+* Rebecca Deng
+* Rida Chaudhry
+* Yubang Jiang
+* Zihan Lin
+*(Based on TMD MARCH 21 DELIVERABLE.pdf)*
